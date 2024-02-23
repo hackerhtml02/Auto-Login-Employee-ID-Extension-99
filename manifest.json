@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Login Employee ID Extension Made By Muhammad Haris",
+  "version": "2.0",
+  "permissions": [
+    "activeTab",
+    "https://accounts.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://accounts.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
